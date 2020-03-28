@@ -1,0 +1,17 @@
+function accum(s) {
+var res="";
+for(i=0;i<s.length;i++)
+{
+res+=s[i].toUpperCase();
+var j=0;
+while(j!=i)
+{
+res+=s[i].toLowerCase();
+j++;
+}
+res+='-';
+}
+res= res.slice(0,res.length-1);
+return res;
+
+}
